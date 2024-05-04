@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(234, 29%, 20%);
+}
+main{
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  margin: 150px auto;
+  padding: 20px;
+  color: hsl(235, 18%, 26%);
+  max-width: fit-content;
+}
+.first{
+display: none;
+}
+article{
+margin-right: 15px;
+}
+section{
+display: block;
+width:300px;
+margin: 20px;
+
+}
+h1{
+  font-weight: bold;
+  font-size: 30px;
+}
+.icon{
+  margin: 0 8px -6px 0; 
+}
+label{
+ font-weight: bold;
+}
+input{
+  margin: 8px 0;
+  padding: 5px;
+}
+.subscribe-btn{
+color:hsl(0, 0%, 100%);
+background-color: hsl(235, 18%, 26%);
+padding: 10px 35px;
+margin: 8px 0;
+border-radius: 8px;
+font-weight: bold;
+border: none;
+cursor: pointer;
+}
+.subscribe-btn:hover{
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.dismiss{
+  color:hsl(0, 0%, 100%) ;
+  background-color:hsl(235, 18%, 26%) ;
+  padding: 10px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.dismiss:hover{
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
