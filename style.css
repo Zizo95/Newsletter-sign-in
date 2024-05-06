@@ -66,3 +66,62 @@ cursor: pointer;
   color: red;
   display: none;
 }
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 1122px){
+  .desktop{
+    width: 220px;
+  }
+}
+@media screen and (max-width: 1063px){
+  main{
+    flex-direction: column-reverse;
+  }
+  .mobile{
+    display: flex;
+    width: 300px;
+  }
+  section{
+    width: 30%;
+  }
+  .desktop{
+    display: none;
+  }
+}
+@media screen and (max-width: 630px){
+  input{
+    margin: 10px 0;
+    padding: 8px 30px;
+  }
+  .subscribe-btn{
+    padding: 15px 16px;
+  }
+  .mobile{
+    width: 220px;
+  }
+  section{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px){
+  .subscribe-btn{
+    padding: 15px 2px;
+  }
+  input{
+    margin: 10px 0;
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width: 472px){
+  .subscribe-btn{
+    font-size: 11px;
+  }
+  input{
+    margin: 10px 0;
+    padding: 8px 0;
+  }
+  .mobile{
+    width: 170px;
+  }
+}
