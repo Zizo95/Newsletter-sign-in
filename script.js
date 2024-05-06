@@ -2,19 +2,19 @@ const messageEl = document.querySelector(".message");
 const button = document.querySelector(".subscribe-btn");
 const main = document.querySelector("main");
 const section = document.querySelector("section");
-const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-(inputText) => {
+button.addEventListener("click",(inputText) => {
   if(inputText.value.match(mailformat)){
+    document.form1.text1.focus();
 section.style.display = "block";
 main.style.display = "none";
-document.form1.text1.focus();
-return true;
+    return true;
 
   }
 else{
+  document.form1.text1.focus();
 messageEl.style.display = "block";
-document.form1.text1.focus();
 return false
 }
-}
+})
